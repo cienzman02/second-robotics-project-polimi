@@ -1,0 +1,30 @@
+define floorplan model
+(
+  bitmap "../map/map.pgm"
+  size [30.0 30.0 0.5]
+  name "map"
+)
+
+define robot model
+(
+  size [0.54 0.40 0.5]
+  color "red"
+  name "robot"
+)
+
+window
+(
+  size [640 480]
+  center [15.0 15.0]
+  scale 50
+)
+
+floorplan
+(
+  pose [0 0 0 0]
+)
+
+robot
+(
+  pose [5.0 5.0 0.0 0.0]
+)

@@ -1,0 +1,16 @@
+<launch>
+  <node pkg="amcl" type="amcl" name="amcl" output="screen">
+    <param name="use_map_topic" value="true"/>
+    <param name="odom_frame_id" value="odom"/>
+    <param name="base_frame_id" value="base_link"/>
+    <param name="global_frame_id" value="map"/>
+    <param name="update_min_d" value="0.2"/>
+    <param name="update_min_a" value="0.2"/>
+    <param name="min_particles" value="500"/>
+    <param name="max_particles" value="2000"/>
+    <param name="initial_pose_x" value="5.0"/>
+    <param name="initial_pose_y" value="5.0"/>
+    <param name="initial_pose_a" value="0.0"/>
+    <remap from="scan" to="base_scan"/>
+  </node>
+</launch>
