@@ -1,6 +1,6 @@
 SECOND ROBOTICS PROJECT – Mapping & Navigation (Politecnico di Milano)
 
-Author: <Vincenzo Del Grosso>
+Author: Vincenzo Del Grosso
 Package: second-robotics-project-polimi
 
 ---
